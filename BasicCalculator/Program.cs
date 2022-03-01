@@ -13,7 +13,8 @@ namespace CalculatorApp
             Console.WriteLine("Press 1 for Addition");
             Console.WriteLine("Press 2 for Subtraction");
             Console.WriteLine("Press 3 for Multiplication");
-            Console.WriteLine("Press 4 for Division \n");
+            Console.WriteLine("Press 4 for Division");
+            Console.WriteLine("Press 5 for Odd or Even\n");
             int action = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter 1st input");
             int input_1 = Convert.ToInt32(Console.ReadLine());
@@ -42,6 +43,8 @@ namespace CalculatorApp
                         result = Division(input_1, input_2);
                         break;
                     }
+                case 5:
+                    //determine if result of addition is odd or even
                 default:
                     Console.WriteLine("Wrong action!! try again");
                     break;
