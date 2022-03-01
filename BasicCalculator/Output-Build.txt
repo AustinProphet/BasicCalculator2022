@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: BasicCalculator, Configuration: Debug Any CPU ------
+1>BasicCalculator -> C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\bin\Debug\net6.0\BasicCalculator.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

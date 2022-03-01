@@ -1,0 +1,15 @@
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\bin\Debug\net6.0\BasicCalculator.exe
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\bin\Debug\net6.0\BasicCalculator.deps.json
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\bin\Debug\net6.0\BasicCalculator.runtimeconfig.json
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\bin\Debug\net6.0\BasicCalculator.dll
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\bin\Debug\net6.0\ref\BasicCalculator.dll
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\bin\Debug\net6.0\BasicCalculator.pdb
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.csproj.AssemblyReference.cache
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.AssemblyInfoInputs.cache
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.AssemblyInfo.cs
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.csproj.CoreCompileInputs.cache
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.dll
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\ref\BasicCalculator.dll
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.pdb
+C:\Users\austi\source\repos\BasicCalculator\BasicCalculator\obj\Debug\net6.0\BasicCalculator.genruntimeconfig.cache
