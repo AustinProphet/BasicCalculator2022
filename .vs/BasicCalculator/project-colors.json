@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7387ec0e-08b3-4c36-a201-0d2ebda74b74": {
+      "ProjectGuid": "7387ec0e-08b3-4c36-a201-0d2ebda74b74",
+      "DisplayName": "BasicCalculator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
