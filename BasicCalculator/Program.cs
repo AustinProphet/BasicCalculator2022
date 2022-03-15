@@ -4,24 +4,35 @@
     {
         static void Main(string[] args)
         {
+            var time = DateTime.Now.ToString(format: "hh:mm:ss tt");
+            bool exitLoop = false;
 
-            bool backTop = true;
-
-            while (backTop)
+            do
             {
                 Console.WriteLine("Welcome to My Calculator!");
+                Console.WriteLine("The Current Time Is");
+                Console.WriteLine(time);
                 Console.WriteLine("Enter the action to be performed");
                 Console.WriteLine("Press 1 for Addition");
                 Console.WriteLine("Press 2 for Subtraction");
                 Console.WriteLine("Press 3 for Multiplication");
                 Console.WriteLine("Press 4 for Division");
-                Console.WriteLine("Press 5 To Exit");
+                Console.WriteLine("Press 5 to Convert Feet to Meters");
+                Console.WriteLine("Press 6 To Exit \n");
+
                 int action = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter 1st input");
-                int input_1 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter 2nd input");
-                int input_2 = Convert.ToInt32(Console.ReadLine());
                 int result = 0;
+                int input_1 = 0;
+                int input_2 = 0;
+                if (action != 6 && action != 5)
+                {
+
+                    Console.WriteLine("Enter 1st input");
+                    input_1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter 2nd input");
+                    input_2 = Convert.ToInt32(Console.ReadLine());
+
+                }
                 switch (action)
                 {
                     case 1:
@@ -46,18 +57,32 @@
                         }
                     case 5:
                         {
+                            double meter, feet;
+                            Console.WriteLine("Enter feet :");
+                            feet = Convert.ToInt32(Console.ReadLine());
+                            meter = feet / 3.2808399;
+                            Console.WriteLine("\nFeet in meter : " + meter);
+                            Console.ReadKey();
+                            break;
+                        }
+                    case 6:
+                        {
                             Console.WriteLine("Thanks for using My Calculator. Goodbye!");
-                            Environment.Exit(0);
+                            exitLoop = true;
                             break;
                         }
                     default:
                         Console.WriteLine("Wrong action!! try again");
                         break;
+
                 }
-                Console.WriteLine("The result is {0} \n", result);
-                Console.ReadKey();
-            }
-            backTop = false;
+                if (action != 6 && action != 5)
+                {
+                    Console.WriteLine("The result is {0} \n", result);
+                    Console.ReadKey();
+                }
+            } while (!exitLoop);
+
         } 
         public static int Addition(int input_1, int input_2)
         {
@@ -79,5 +104,6 @@
             int result = input_1 / input_2;
             return result;
         }
+
     }
 }
