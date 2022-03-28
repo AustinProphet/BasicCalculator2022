@@ -1,16 +1,28 @@
-﻿namespace CalculatorApp
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CalculatorApp
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello! Please enter your name.");
+            string Username = Console.ReadLine();
+
+            User calcUser = new User() { Username = Username };
+
             var starttime = DateTime.Now;
             bool exitLoop = false;
 
             do
             {
+                Console.WriteLine("Hello " + calcUser.Username);
                 Console.WriteLine("Welcome to My Calculator!");
-                Console.WriteLine("You Began Using My Calculator at " + starttime);
+                Console.WriteLine("You Have Begun Using My Calculator at " + starttime);
                 Console.WriteLine("\n");
                 Console.WriteLine("Enter the action to be performed");
                 Console.WriteLine("Press 1 for Addition");
@@ -20,17 +32,17 @@
                 Console.WriteLine("Press 5 to Convert Feet to Meters");
                 Console.WriteLine("Press 6 To Exit \n");
 
-                int action = Convert.ToInt32(Console.ReadLine());
-                int result = 0;
-                int input_1 = 0;
-                int input_2 = 0;
+                double action = double.Parse(Console.ReadLine());
+                double result = 0;
+                double input_1 = 0;
+                double input_2 = 0;
                 if (action != 6 && action != 5)
                 {
 
                     Console.WriteLine("Enter 1st input");
-                    input_1 = Convert.ToInt32(Console.ReadLine());
+                    input_1 = double.Parse(Console.ReadLine());
                     Console.WriteLine("Enter 2nd input");
-                    input_2 = Convert.ToInt32(Console.ReadLine());
+                    input_2 = double.Parse(Console.ReadLine());
 
                 }
                 switch (action)
@@ -89,24 +101,24 @@
             } while (!exitLoop);
 
         } 
-        public static int Addition(int input_1, int input_2)
+        public static double Addition(double input_1, double input_2)
         {
-            int result = input_1 + input_2;
+            double result = input_1 + input_2;
             return result;
         } 
-        public static int Subtraction(int input_1, int input_2)
+        public static double Subtraction(double input_1, double input_2)
         {
-            int result = input_1 - input_2;
+            double result = input_1 - input_2;
             return result;
         } 
-        public static int Multiplication(int input_1, int input_2)
+        public static double Multiplication(double input_1, double input_2)
         {
-            int result = input_1 * input_2;
+            double result = input_1 * input_2;
             return result;
         } 
-        public static int Division(int input_1, int input_2)
+        public static double Division(double input_1, double input_2)
         {
-            int result = input_1 / input_2;
+            double result = input_1 / input_2;
             return result;
         }
 
