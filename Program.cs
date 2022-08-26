@@ -36,13 +36,16 @@ namespace CalculatorApp
                 double result = 0;
                 double input_1 = 0;
                 double input_2 = 0;
+                var inputstring = "";
                 if (action != 6 && action != 5)
                 {
 
                     Console.WriteLine("Enter 1st input");
                     input_1 = double.Parse(Console.ReadLine());
                     Console.WriteLine("Enter 2nd input");
-                    input_2 = double.Parse(Console.ReadLine());
+                    inputstring = Console.ReadLine();
+                    Console.WriteLine(inputstring);
+                    input_2 = double.Parse(inputstring);
 
                 }
                 switch (action)
@@ -95,8 +98,14 @@ namespace CalculatorApp
                 if (action != 6 && action != 5)
                 {
                     Console.WriteLine("The result is {0} \n", result);
-                    Console.WriteLine("Press Enter to continue \n");
-                    Console.ReadKey();
+                    ConsoleKeyInfo cki = new ConsoleKeyInfo();
+                    do
+                    {
+                        Console.WriteLine("Press Enter to continue \n");
+                        cki = Console.ReadKey();
+                    }
+                    while (cki.Key != ConsoleKey.Enter);
+                    
                 }
             } while (!exitLoop);
 
